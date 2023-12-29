@@ -1,0 +1,206 @@
+*{
+    border: 0;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    height: 100vh;
+    background-color: black;
+  
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align:center;
+   
+
+    
+}
+
+#heading{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 120px;
+    left: 380px;
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    place-content: center;
+    justify-content: center;
+    height: 100vh;
+    
+   
+}
+
+
+.slider {
+    
+    position: absolute;
+    top: 670px;
+    left: 800px;
+    width: 200px;
+    transform: scale(0.8);
+}
+
+.slider input{
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 212px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    z-index: 99;
+}
+
+.slider input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #242323;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider progress {
+    width: 200px;
+    height: 20px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+.slider progress::-webkit-progress-bar{
+
+
+
+    
+    background-color: #d2d8d6;
+    
+
+
+
+}
+.slider progress::-webkit-progress-value{
+    
+background-color: gray;
+}
+
+.sliderValue {
+    font-family: "Google Sans Regular";
+    width: 28px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#VolumeIcon{
+    font-size: 30px;
+    position: absolute;
+    top:665px;
+    left: 989px;
+    background-image: url(/volume-up.png);
+    background-repeat: no-repeat;
+}
+
+#iconImage{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top:670px;
+    left: 989px;
+    
+}
+
+.progress-area{
+    height: 6px;
+    width: 270px;
+    background: #fff;
+    position: absolute;
+    top: 620px;
+    left:755px;
+    border-radius: 50px;
+}
+#box{
+    background-color: #ffffff;
+}
+#songButton{
+    background-color: gray;
+    margin: 3px;
+    width: 95%;
+    height: 95px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#box2{
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    height: 520px;
+    left: 340px;
+    top: 200px;
+    border-radius: 20px;
+    align-items: start;
+    overflow-y: auto;
+    
+}
+
+
+.progress-area .progress-bar{
+    height: inherit;
+    width: 50%;
+    border-radius: inherit;
+    background: red;
+}
+
+
+
+.progress-bar::before{
+    content: " ";
+}
+
+#sliderTimer{
+    position: absolute;
+    top: 620px;
+    left: 792px;
+    width: 200px;
+    
+    
+    
+    cursor: pointer;
+}
+
+
+#timer{
+    position: absolute;
+    top: 615px;
+    left: 750px;
+}
+#maxDuration{
+    position: absolute;
+    top: 615px;
+    left: 1000px;
+}
+
+#songName{
+    font-size: 30px;
+
+    
+    
+
+}
+#songAuthor{
+font-size: 30px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="input.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-pause-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/music.css' rel='stylesheet'>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+   
+</head>
+<body class="h-14 text-center items-center place-items-center align-middle justify-center" onload="d()">
+    <div  id="box2"></div>
+    <label id="heading">Choose a song</label>
+    <div id='wrapper' class="wrapper">
+
+
+    
+    <div class="MusicPlayer">
+       
+    <div id="box" class="absolute MusicPlayer w-[300px] h-[520px] top-[200px] left-[740px] rounded-[20px]">
+        <label id="songName"></label><br>
+        <label id="songAuthor"></label>
+    <button onclick="play()" id="playButton"  class="absolute bottom-7 left-[25px] scale-[2.8] "><i class="fa fa-play"></i></button>
+    <button onclick="pause()" id="pauseButton" class="absolute bottom-7 left-[25px] scale-[2.8] invisible"><i class="fa fa-pause"></i></button>
+    </div>
+    </div>  
+    
+    <audio id="audio" preload="metadata">
+        <source id="musicSource"  type="audio/ogg">
+    </audio>
+                
+            
+        
+    
+    <div class="slider-cont">
+        <div class="slider">
+            <input id="volumeRange" type="range" min="0" max="100" value="50" onchange="VolumeIconF()">
+             <progress min="0" max="100" value="50"></progress>
+        </div>
+        <div class="sliderValue pl-1 pb-7"><i class="fa fa-volume-up" id="VolumeIcon" aria-hidden="true"></i></div>
+        <image id="iconImage" style="visibility: hidden;" src="/volume-up.ico"></image>
+        
+    </div>
+
+        
+            
+            
+
+<div class="timer">
+    <div id="timer">0:00</div>
+    <input id="sliderTimer" type="range" min="0" max="100" value="0" onchange="slideFunction()">
+    <div id="maxDuration">0:00</div>
+
+    
+</div>    
+        
+</div>
+
+</div>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>
